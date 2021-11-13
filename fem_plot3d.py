@@ -63,7 +63,7 @@ def interpolate(p_x, p_y):
     distance_x = x - p_x
     distance_y = y - p_y 
     w = distance_x ** 2 + distance_y ** 2
-    return 10 * np.sum(w)
+    return 10 * np.sum(1 / (w+1e-4))
 
 func = np.vectorize(interpolate) # 这是一个对numpy数组每一个元素进行interpolate计算的函数
 f = func(grid_x, grid_y) # 对numpy数组每一个元素进行interpolate计算，得到函数值array
