@@ -1,3 +1,5 @@
+# Ref：https://matplotlib.org/stable/gallery/images_contours_and_fields/triplot_demo.html
+# Ref: https://towardsdatascience.com/simple-example-of-2d-density-plots-in-python-83b83b934f67
 import matplotlib.pyplot as plt  
 import numpy as np 
 
